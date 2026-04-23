@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Sarabun", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Sarabun", serif;
+
+  --color-wellness-dark: #2E7D32;
+  --color-wellness-mid: #66BB6A;
+  --color-wellness-accent: #A5D6A7;
+  --color-wellness-light: #E8F5E9;
+  --color-wellness-bg: #F5F7F2;
+  --color-wellness-border: #E0E6D8;
+  --color-wellness-ink: #1B3F1B;
+  --color-wellness-input: #DDE2D5;
+}
+
+@layer base {
+  body {
+    @apply bg-wellness-bg text-wellness-ink font-sans;
+  }
+}
